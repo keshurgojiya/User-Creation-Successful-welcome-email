@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You've Been Invited to IronTrac</title>
+
+  <style>
+    @media only screen and (max-width:600px) {
+      .container {
+        width: 100% !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+      .mobile-stack-center {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#F8FBFD; font-family: inter, Arial, sans-serif;">
+
+  <!-- Wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F8FBFD">
+    <tr>
+      <td align="center" style="padding:32px 10px;">
+
+        <!-- Main Container -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+          style="max-width:576px; background:#FFFFFF;overflow:hidden;"
+          class="container">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:16px 24px; border-bottom:1px solid #F5F5F5;">
+              <a target="_blank" href="https://www.irontrac.com/" style="text-decoration:none;">
+                <img src="https://neosgold.blob.core.windows.net/public-images/irontrac-logo-dark.png"
+                  width="144" alt="IronTrac"
+                  style="display:block; border:0; outline:none; text-decoration:none;">
+              </a>
+            </td>
+          </tr>
+
+          <!-- Body Content -->
+          <tr>
+            <td style="padding:32px 24px 24px 24px;">
+
+              <!-- Greeting -->
+              <p style="margin:0 0 16px 0; font-size:16px; color:#344054; line-height:24px;">
+                Hello {{UserFirstName}},
+              </p>
+
+              <!-- Invitation Message -->
+              <p style="margin:0 0 16px 0; font-size:16px; color:#344054; line-height:24px;">
+                You've been invited by {{InviterName}}
+                at {{CompanyName}} to join IronTrac.
+              </p>
+
+              <!-- Instruction -->
+              <p style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
+                Activate your account to complete setup and get started:
+              </p>
+
+              <!-- Activate Link Line -->
+              <p style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
+                <strong style="color:#101828;">Activate Your Account</strong>:
+                <a href="{{ActivationLink}}" style="color:#2563EB; text-decoration:none;">
+                  {{Activation Link}}
+                </a>
+              </p>
+
+              <!-- Expiry Notice -->
+              <p style="margin:0; font-size:16px; color:#344054; line-height:24px;">
+                This activation link is valid until {{ExpirationDate}}.
+                If the link expires before activation is completed, please contact
+                your administrator to request a new invitation.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding:0 24px;">
+              <hr style="border:none; border-top:1px solid #F5F5F5; margin:0;">
+            </td>
+          </tr>
+
+          <!-- Footer Note -->
+          <!-- Footer Text -->
+          <tr>
+            <td style="border-top:1px solid #f5f5f5;
+                       padding:16px 24px 0 24px;
+                       font-size:14px;
+                       color:#667085;
+                       line-height:20px;">
+              If you believe you have received this email in error or need assistance, please contact the IronTrac support team at
+              <a href="#" style="color:#2563EB; text-decoration:none;">
+                 {{support_email}}
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer Bottom Row -->
+          <tr>
+            <td style="padding:10px 24px 24px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="mobile-stack-center" style="font-size:12px; color:#667085; line-height:18px;">
+                    © 2025 IronTrac, Do not reply to this email.
+                  </td>
+
+                  <td align="right" class="mobile-stack-center" style="font-size:12px; color:#828282;">
+                    <a href="https://www.irontrac.com/privacy" style="color:#828282; text-decoration:none;">
+                      Privacy Policy
+                    </a> |
+                    <a href="#" style="color:#828282; text-decoration:none;">
+                      Terms link
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Logo + Social -->
+          <tr>
+            <td style="padding:0 24px 16px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <a href="https://www.irontrac.com/" target="_blank">
+                      <img src="https://neosgold.blob.core.windows.net/public-images/irontrac-logo-dark.png" width="120" alt="IronTrac Logo" style="display:block; border:0;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
