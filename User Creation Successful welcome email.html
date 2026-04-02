@@ -52,13 +52,13 @@
 
               <!-- Greeting -->
               <p style="margin:0 0 16px 0; font-size:16px; color:#344054; line-height:24px;">
-                Hello {{UserFirstName}},
+                Hello {{user.given_name}},
               </p>
 
               <!-- Invitation Message -->
               <p style="margin:0 0 16px 0; font-size:16px; color:#344054; line-height:24px;">
-                You've been invited by {{InviterName}}
-                at {{CompanyName}} to join IronTrac.
+                You've been invited by {{user.app_metadata.inviter_name}}
+                at {{user.app_metadata.tenant_name}} to join IronTrac.
               </p>
 
               <!-- Instruction -->
@@ -69,14 +69,14 @@
               <!-- Activate Link Line -->
               <p style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
                 <strong style="color:#101828;">Activate Your Account</strong>:
-                <a href="{{ActivationLink}}" style="color:#2563EB; text-decoration:none;">
-                  {{Activation Link}}
+                <a href="{{user.app_metadata.link}}" style="color:#2563EB; text-decoration:none;">
+                  Activation Link
                 </a>
               </p>
 
               <!-- Expiry Notice -->
               <p style="margin:0; font-size:16px; color:#344054; line-height:24px;">
-                This activation link is valid until {{ExpirationDate}}.
+                This activation link is valid until {{user.app_metadata.expiration_date}}.
                 If the link expires before activation is completed, please contact
                 your administrator to request a new invitation.
               </p>
@@ -101,7 +101,7 @@
                        line-height:20px;">
               If you believe you have received this email in error or need assistance, please contact the IronTrac support team at
               <a href="#" style="color:#2563EB; text-decoration:none;">
-                 {{support_email}}
+                 support@irontrac.com
               </a>
             </td>
           </tr>
