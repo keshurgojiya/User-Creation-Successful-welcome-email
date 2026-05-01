@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark"> 
+  <title>You've Been Invited to IronTrac</title>
+
+  <style>
+
+    @media only screen and (max-width:600px) {  
+      .container {
+        width: 100% !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+      .mobile-stack-center {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      body {
+        background-color: #282828 !important;
+      }
+
+      table {
+        background-color: #333333 !important;
+      }
+
+      h1, h2, h3, p, strong {
+        color: #eeeeee !important;
+      }
+
+      .footer-text {
+        color: #bdbdbd !important;
+      }
+
+      .light-logo {
+        display: none !important;
+      }
+
+      .dark-logo {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#F8FBFD; font-family: inter, Arial, sans-serif;">
+
+  <!-- Wrapper -->
+  <table align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#F8FBFD">
+    <tr>
+      <td align="center">
+
+        <!-- Main Container -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+          style="max-width:576px; background:#FFFFFF;overflow:hidden;"
+          class="container">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:16px 24px; border-bottom:1px solid #F5F5F5;">
+              <a href="https://www.irontrac.com/" target="_blank">
+                <!-- Light Mode Logo -->
+                <img
+                  src="https://neosgold.blob.core.windows.net/public-images/irontrac-logo-dark.png"
+                  width="144"
+                  alt="IronTrac Logo"
+                  class="light-logo"
+                  style="display:block; border:0;"
+                >
+                
+                <!-- Dark Mode Logo -->
+                
+                <img
+                  src="https://neosgold.blob.core.windows.net/public-images/irontrac-logo-white.png"
+                  width="144"
+                  alt="IronTrac Logo"
+                  class="dark-logo"
+                  style="display:none; border:0;"
+                >
+              </a>
+            </td>
+          </tr>
+
+          <!-- Body Content -->
+          <tr>
+            <td style="padding:32px 24px 24px 24px;">
+
+              <!-- Greeting -->
+              <p style="margin:0 0 16px 0; font-size:16px; color:#344054; line-height:24px;">
+                Hello {{user_name}},
+              </p>
+
+              <!-- Invitation Message -->
+              <p style="margin:0 0 16px 0; font-size:16px; color:#344054; line-height:24px;">
+                You've been invited by {{inviter_name}}
+                at {{tenant_name}} to join IronTrac.
+              </p>
+
+              <!-- Instruction -->
+              <p style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
+                Activate your account to complete setup and get started:
+              </p>
+
+              <!-- Activate Link Line -->
+              <p style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
+                <strong style="color:#101828;">Activate Your Account</strong>:
+                <a class="blue-links" href="{{link}}" style="color:#2563EB; text-decoration:none;">
+                  Activation Link
+                </a>
+              </p>
+
+              <!-- Expiry Notice -->
+              <p style="margin:0; font-size:16px; color:#344054; line-height:24px;">
+                This activation link is valid until {{expiration_date}}.
+                If the link expires before activation is completed, please contact
+                your administrator to request a new invitation.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer Note -->
+          <!-- Footer Text -->
+          <tr>
+            <td class="footer-text" style="border-top:1px solid #f5f5f5;
+                       padding:16px 24px 0 24px;
+                       font-size:14px;
+                       color:#667085;
+                       line-height:20px;">
+              If you believe you have received this email in error or need assistance, please contact the IronTrac support team at
+              <a class="blue-links" href="#" style="color:#2563EB; text-decoration:none;">
+                 support@irontrac.com
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer Bottom Row -->
+          <tr>
+            <td style="padding:10px 24px 24px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="mobile-stack-center footer-text" style="font-size:12px; color:#667085; line-height:18px;">
+                    © {{year}} IronTrac, Do not reply to this email.
+                  </td>
+
+                  <td align="right" class="mobile-stack-center" style="font-size:12px; color:#828282;">
+                    <a class="footer-text" href="https://www.irontrac.com/privacy-policy" style="color:#828282; text-decoration:none;">
+                      Privacy Policy
+                    </a> |
+                    <a class="footer-text" href="https://www.irontrac.com/terms-of-service" style="color:#828282; text-decoration:none;">
+                      Terms link
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Logo + Social -->
+          <tr>
+            <td style="padding:0 24px 16px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <!-- Light Mode Logo -->
+                    <a href="https://www.irontrac.com/" target="_blank">
+                      <img
+                        src="https://neosgold.blob.core.windows.net/public-images/irontrac-logo-dark.png"
+                        width="144"
+                        alt="IronTrac Logo"
+                        class="light-logo"
+                        style="display:block; border:0;"
+                      >
+                    </a>
+
+                    <!-- Dark Mode Logo -->
+                    <a href="https://www.irontrac.com/" target="_blank">
+                      <img
+                        src="https://neosgold.blob.core.windows.net/public-images/irontrac-logo-white.png"
+                        width="144"
+                        alt="IronTrac Logo"
+                        class="dark-logo"
+                        style="display:none; border:0;"
+                      >
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Container -->
+
+      </td>
+      <div style="font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0;color:transparent;display:none;">
+        {{ site_settings.company_name }}
+        {{ site_settings.company_street_address_1 }}
+        {{ site_settings.company_street_address_2 }}
+        {{ site_settings.company_city }}
+        {{ site_settings.company_state }}
+        {{ site_settings.company_zip }}
+        {{ site_settings.company_country }}
+        {{ unsubscribe_link }}
+      </div>
+    </tr>
+  </table>
+
+</body>
+</html>
