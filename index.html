@@ -10,6 +10,10 @@
 
   <style>
 
+    .blue-links {
+      color: #175FFF !important;
+    }
+
     @media only screen and (max-width:600px) {  
       .container {
         width: 100% !important;
@@ -48,6 +52,10 @@
 
       .dark-logo {
         display: block !important;
+      }
+
+      .blue-links {
+        color: #175FFF !important;
       }
     }
   </style>
@@ -112,15 +120,15 @@
               </p>
 
               <!-- Activate Link Line -->
-              <p style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
+              <span style="margin:0 0 20px 0; font-size:16px; color:#344054; line-height:24px;">
                 <strong style="color:#101828;">Activate Your Account</strong>:
-                <a class="blue-links" href="{{link}}" style="color:#2563EB; text-decoration:none;">
+                <a class="blue-links" href="{{link}}" style="color:#2563EB!important; text-decoration:none;">
                   Activation Link
                 </a>
-              </p>
+              </span>
 
               <!-- Expiry Notice -->
-              <p style="margin:0; font-size:16px; color:#344054; line-height:24px;">
+              <p style="margin:0; margin-top: 20px; font-size:16px; color:#344054; line-height:24px;">
                 This activation link is valid until {{expiration_date}}.
                 If the link expires before activation is completed, please contact
                 your administrator to request a new invitation.
@@ -132,13 +140,12 @@
           <!-- Footer Note -->
           <!-- Footer Text -->
           <tr>
-            <td class="footer-text" style="border-top:1px solid #f5f5f5;
+            <td style="border-top:1px solid #f5f5f5;
                        padding:16px 24px 0 24px;
                        font-size:14px;
-                       color:#667085;
                        line-height:20px;">
-              If you believe you have received this email in error or need assistance, please contact the IronTrac support team at
-              <a class="blue-links" href="#" style="color:#2563EB; text-decoration:none;">
+              <span class="footer-text" style="color:#667085;">If you believe you have received this email in error or need assistance, please contact the IronTrac support team at</span>
+              <a class="blue-links" href="#" style="color:#2563EB!important; text-decoration:none;">
                  support@irontrac.com
               </a>
             </td>
